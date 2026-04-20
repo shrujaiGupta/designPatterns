@@ -8,7 +8,7 @@ class Singleton {
 
     private static instance: Singleton
 
-    public static getInstance(): Singleton {
+    public static getInstance(): Singleton{
         if(Singleton.instance == null){
             Singleton.instance = new Singleton()
         }
