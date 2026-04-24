@@ -1,9 +1,9 @@
 import { EPaymentGateway } from "../enums/paymentGateway";
-import { paymentFactory } from "../factory/paymentFactory"
+import { PaymentFactory } from "../factory/paymentFactory"
 import { PaymentGateway } from "../interfaces/paymentGateway";
 
 export function processPayment(provider: EPaymentGateway, amount: number){
-    const gateway: PaymentGateway = paymentFactory.create(provider)
+    const gateway: PaymentGateway = PaymentFactory.create(provider)
     gateway.pay(amount)
 }
 
