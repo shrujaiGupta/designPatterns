@@ -21,8 +21,8 @@
  *   every call site.
  */
 
-import { Email } from "./email/models/Email";
-import { EmailBuilder } from "./email";
+import { Email } from "./models/Email";
+import { EmailBuilder } from ".";
 
 async function main(): Promise<void> {
   // Fluent construction — order of calls does not need to match parameter order
