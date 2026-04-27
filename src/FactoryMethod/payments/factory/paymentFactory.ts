@@ -1,10 +1,10 @@
-import { PaymentGateway } from "../interfaces/paymentGateway"
+import { IPaymentGateway } from "../interfaces/paymentGateway"
 import { EPaymentGateway } from "../enums/paymentGateway"
 import { Paypal } from "../providers/paypalGateway"
 import { Razorpay } from "../providers/razorpayGateway"
 import { Stripe } from "../providers/stripeGateway"
 export class PaymentFactory {
-    static create(provider : EPaymentGateway): PaymentGateway{
+    static create(provider : EPaymentGateway): IPaymentGateway {
         if(provider === EPaymentGateway.PAYPAL){
             return new Paypal()
         }

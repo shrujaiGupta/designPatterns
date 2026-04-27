@@ -1,3 +1,3 @@
-export interface PaymentGateway {
+export interface IPaymentGateway {
     pay(amount: number): void;
 }

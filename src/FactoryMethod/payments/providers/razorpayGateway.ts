@@ -1,7 +1,7 @@
-import { PaymentGateway } from "../interfaces/paymentGateway"
+import { IPaymentGateway } from "../interfaces/paymentGateway"
 import { EPaymentGateway } from "../enums/paymentGateway"
 
-export class Razorpay implements PaymentGateway{
+export class Razorpay implements IPaymentGateway{
     pay(amount : number): void{
         console.log(`Amount of rs. ${amount} is paid successfully from ${EPaymentGateway.RAZORPAY} gateway!`)
     }
