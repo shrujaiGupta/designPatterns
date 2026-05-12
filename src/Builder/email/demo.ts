@@ -22,7 +22,7 @@
  */
 
 import { Email } from "./models/Email";
-import { EmailBuilder } from ".";
+import { EmailBuilder } from "./builders/EmailBuilder";
 
 async function main(): Promise<void> {
   // Fluent construction — order of calls does not need to match parameter order
